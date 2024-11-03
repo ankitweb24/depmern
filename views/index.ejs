@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="index_">
+  <h1>Create New Account</h1>
+  <form action="/register" method="post">
+    <div class="form_control">
+      <label for="username">User Name</label>
+      <input autocomplete="off" id="username" type="text" placeholder="type user name" />
+    </div>
+    <div class="form_control">
+      <label for="email">Email</label>
+      <input autocomplete="off" id="email" type="email" placeholder="type email" />
+    </div>
+    <div class="form_control">
+      <label for="password">Password</label>
+      <input autocomplete="off" id="password" type="password" placeholder="type your password" />
+    </div>
+
+    <button>Submit</button>
+
+    <p>Already Have An Account ? <a href="/login">Login</a></p>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
